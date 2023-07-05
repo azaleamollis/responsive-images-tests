@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Responsive Images | HTML </title>
+        <meta name="description" content="Responsive images">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        
+        <h1>Responsive Image Tests | HTML</h1>
+
+        <h2>1. The <code>&lt;img&gt;</code> element with a single image source</h2>
+
+        <img src="images/lake.jpg" alt="Lake">
+
+        <h2>2. The <code>&lt;img&gt;</code> element with a single image source and <code>&lt;figcaption&gt;</code></h2>
+
+        <figure>
+            <img src="images/lake.jpg" alt="Lake">
+            <figcaption>Lake, mountains, boats</figcaption>
+        </figure>
+
+        <h2>3. The <code>&lt;img&gt;</code> element with a single image source and sizing hints</h2>
+
+        <img src="images/lake.jpg" alt="Lake" width="900" height="600">
+
+        <h2>4. The <code>&lt;img&gt;</code> element with <code>srcset</code> and x-descriptors</h2>
+        <img src="images/xdesc/lake.jpg" srcset="images/xdesc/lake-2x.jpg 2x, images/xdesc/lake-4x.jpg 4x" alt="Lake" width="900" height="600">
+
+        <h2>5. The <code>&lt;img&gt;</code> element with <code>srcset</code>, w-descriptors, and a single value for <code>sizes</code></h2>
+        <img src="images/wdesc/lake-lg.jpg" srcset="images/wdesc/lake-sm.jpg 300w, images/wdesc/lake-md.jpg 600w, images/wdesc/lake-lg.jpg 900w, images/wdesc/lake-xl.jpg 1200w" sizes="60vw" alt="Lake">
+
+        <h2>6. The <code>&lt;img&gt;</code> element with <code>srcset</code>, w-descriptors, and three values for <code>sizes</code></h2>
+        <img src="images/wdesc/lake-lg.jpg" srcset="images/wdesc/lake-sm.jpg 300w, images/wdesc/lake-md.jpg 600w, 
+        images/wdesc/lake-lg.jpg 900w, images/wdesc/lake-xl.jpg 1200w" sizes="(max-width: 640px) 100vw, (max-width: 960px) 80vw, 60vw" alt="Lake">
+
+        <h2>7. The <code>&lt;source&gt;</code> element with single image sources and the <code>media</code> attribute</h2>
+        <picture>     
+            <source srcset="images/art-direction/lake-with-mountains.jpg" media="(min-width: 1280px)" width="1200" height="800">
+            <source srcset="images/art-direction/lake-without-mountains.jpg" media="(min-width: 640px) and (max-width: 1279px)" width="900" height="600">
+            <img src="images/art-direction/only-a-boat.jpg" alt="Lake" width="450" height="800">
+        </picture>
+
+        <h2>8. The <code>&lt;source&gt;</code> element with x-descriptors and the <code>media</code> attribute</h2>
+        <picture>    
+            <source srcset="images/art-direction/lake-with-mountains.jpg 1x, images/art-direction/lake-with-mountains-2x.jpg 2x" media="(min-width: 1280px)" width="1200" height="800">
+            <source srcset="images/art-direction/lake-without-mountains.jpg 1x, images/art-direction/lake-without-mountains-2x.jpg 2x" media="(min-width: 640px) and (max-width: 1279px)" width="900" height="600">
+            <img src="images/art-direction/only-a-boat.jpg" srcset="images/art-direction/only-a-boat-2x.jpg 2x" alt="Lake" width="450" height="800">
+        </picture>
+
+        <h2>9. The <code>&lt;source&gt;</code> element with the <code>type</code> attribute (file formats: AVIF, WebP, JPG)</h2>
+        <picture>
+            <source srcset="images/mime-types/lake.avif" type="image/avif">
+            <source srcset="images/mime-types/lake.webp" type="image/webp">
+            <img src="images/mime-types/lake.jpg" alt="Lake" width="1200" height="800">
+        </picture> 
+
+        <h2>10. The <code>&lt;source&gt;</code> element with both the <code>media</code> and <code>type</code> attributes (file formats: WebP, JPG)</h2>
+        <picture>     
+            <source srcset="images/combined/lake-with-mountains.webp" media="(min-width: 1280px)" type="image/webp" width="1200" height="800">
+            <source srcset="images/combined/lake-with-mountains.jpg" media="(min-width: 1280px)" type="image/jpeg" width="1200" height="800">
+            <source srcset="images/combined/lake-without-mountains.webp" media="(min-width: 640px) and (max-width: 1279px)" type="image/webp" width="900" height="600">
+            <source srcset="images/combined/lake-without-mountains.jpg" media="(min-width: 640px) and (max-width: 1279px)" type="image/jpeg" width="900" height="600">
+            <source srcset="images/combined/only-a-boat.webp" type="image/webp" width="450" height="800">
+            <img src="images/combined/only-a-boat.jpg" alt="Lake" width="450" height="800">
+        </picture>
+         
+    </body>
+</html>

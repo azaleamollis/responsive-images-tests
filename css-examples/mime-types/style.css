@@ -1,0 +1,22 @@
+body {
+    font-family: sans-serif;
+
+    background-repeat: no-repeat;
+
+    /* Fallback */
+    background-image: url("images/mime-types/lake.jpg");
+    
+    /* Prefixed */
+    background-image: -webkit-image-set(
+        url("images/mime-types/lake.avif") type("image/avif"), 
+        url("images/mime-types/lake.webp") type("image/webp"), 
+        url("images/mime-types/lake.jpg") type("image/jpeg")
+    );
+
+    /* Default */
+    background-image: image-set(
+        url("images/mime-types/lake.avif") type("image/avif"), 
+        url("images/mime-types/lake.webp") type("image/webp"), 
+        url("images/mime-types/lake.jpg") type("image/jpeg")
+    );
+}

@@ -1,0 +1,22 @@
+body {
+    font-family: sans-serif;
+
+    background-repeat: no-repeat;
+
+    /* Fallback */
+    background-image: url("images/xdesc/lake.jpg");
+    
+    /* Prefixed */
+    background-image: -webkit-image-set(
+        url("images/xdesc/lake.jpg") 1x, 
+        url("images/xdesc/lake-2x.jpg") 2x, 
+        url("images/xdesc/lake-4x.jpg") 4x
+    );
+
+    /* Default */
+    background-image: image-set(
+        url("images/xdesc/lake.jpg") 1x, 
+        url("images/xdesc/lake-2x.jpg") 2x, 
+        url("images/xdesc/lake-4x.jpg") 4x
+    );
+}
