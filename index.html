@@ -6,7 +6,7 @@
         <title>Responsive Images</title>
         <meta name="description" content="Responsive images">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <style>body {font-family: sans-serif; padding: 1.25rem;} a {color: royalblue;} a:hover,a:focus,a:visited {color: darkblue;}</style>
+        <style>body {font-family: sans-serif; line-height: 1.6; padding: 1.25rem;} a {color: royalblue;} a:hover,a:focus,a:visited {color: darkblue;}</style>
     </head>
     <body>
         
@@ -16,6 +16,11 @@
             <p><a href="https://www.annalytic.com/responsive-images-tests/html-examples/">HTML tests</a></p>
             <p><a href="https://www.annalytic.com/responsive-images-tests/css-examples/x-descriptors/">CSS test | x-descriptors</a></p>
             <p><a href="https://www.annalytic.com/responsive-images-tests/css-examples/mime-types">CSS test | next-gen images</a></p>
+            <p style="max-width: 30rem;"><strong>Note:</strong> In the HTML tests, no CSS styles are applied to the images &mdash; you just see the raw image files. To display fluid images on mobile (to prevent overflowing), you'd need to add the following CSS rules:</p>
+            <pre style="background-color: #e5e5e5; color: #222; padding: 0.5rem 1.5rem; font-size: 1rem;">img {
+    max-width: 100%; 
+    height: auto;
+}</pre>
             <p style="margin-top: 5rem;">
                 <a style="display: inline-block; background-color: royalblue; outline: 1px royalblue solid; color: white; padding: 1.25rem 2rem; margin: 0.5rem; text-decoration: none;" href="https://www.debugbear.com/blog">Go to the article &raquo;</a>
                 <a style="display: inline-block; background-color: white; color: royalblue; outline: 1px royalblue solid; padding: 1.25rem 2rem; margin: 0.5rem; text-decoration: none;" href="https://github.com/azaleamollis/responsive-images-tests">Go to GitHub &raquo;</a>
