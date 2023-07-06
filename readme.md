@@ -2,6 +2,8 @@
 
 This repository includes the code examples used in 'The Ultimate Guide to Responsive Images on the Web' article, published on the DebugBear Web Performance Blog.
 
+An [online version of the demos](https://www.annalytic.com/responsive-images-tests/)  is available, too.
+
 ## Recommendations
 
 To run the code examples, it's recommended that you upload the code to a local web server (such as WAMP, XAMPP, MAMP, etc.) so that you can check the performance implications in the 'Network' tab of your DevTools. Alternatively, you can also open the `index.html` files simply in your web browser, however in this case, you won't have access to the performance data.
